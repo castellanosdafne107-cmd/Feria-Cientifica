@@ -42,10 +42,7 @@
               <IconMapPin class="contact-icon" />
               <span>Colegio Visión de Fe, Guatemala</span>
             </li>
-            <li>
-              <IconMail class="contact-icon" />
-              <span>feria@colegiovisiondefe.edu.gt</span>
-            </li>
+
             <li>
               <IconUser class="contact-icon" />
               <span>Docente: Sitraly Castellanos</span>
@@ -93,7 +90,7 @@
 
 <script setup>
 import IconMapPin from './icons/IconMapPin.vue'
-import IconMail from './icons/IconMail.vue'
+
 import IconUser from './icons/IconUser.vue'
 import IconCalendar from './icons/IconCalendar.vue'
 
