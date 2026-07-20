@@ -29,7 +29,7 @@
           <ul class="footer-links">
             <li><a href="#participar" @click.prevent="scrollTo('#participar')">Cómo Participar</a></li>
             <li><a href="#materiales" @click.prevent="scrollTo('#materiales')">Materiales y Equipo</a></li>
-            <li><a href="#lapbook" @click.prevent="scrollTo('#lapbook')">Lapbook</a></li>
+            <li><a href="#lapbook" @click.prevent="scrollTo('#lapbook')">Lapbook Giratorio</a></li>
             <li><a href="#recordatorio" @click.prevent="scrollTo('#recordatorio')">Recordatorios</a></li>
           </ul>
         </div>
@@ -54,25 +54,19 @@
         <div class="footer-col">
           <h4 class="footer-heading">Calendario del Evento</h4>
           <div class="footer-schedule">
-            <div class="schedule-item">
-              <IconCalendar class="schedule-icon" />
-              <div>
-                <strong>Inscripciones</strong>
-                <span>Del 1 al 30 de junio 2026</span>
-              </div>
-            </div>
+            
             <div class="schedule-item">
               <IconCalendar class="schedule-icon" />
               <div>
                 <strong>Pruebas</strong>
-                <span>Del 15 al 19 de julio 2026</span>
+                <span>Del 20 de julio al 31 de julio</span>
               </div>
             </div>
             <div class="schedule-item">
               <IconCalendar class="schedule-icon" />
               <div>
                 <strong>Feria Oficial</strong>
-                <span>Semana del 20 al 25 de julio 2026</span>
+                <span>07 de Agosto</span>
               </div>
             </div>
           </div>

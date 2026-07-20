@@ -26,8 +26,6 @@
             <p class="step-desc">{{ step.description }}</p>
           </div>
         </div>
-
-        <div class="timeline-line" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -48,11 +46,7 @@ const steps = [
     description: 'Tener aprobada por tu docente de Ciencias Naturales una de las propuestas presentadas en clase. ¡Puedes guiarte del temario para seleccionar tu proyecto!',
     icon: IconClipboard,
   },
-  {
-    title: 'Inscripción',
-    description: 'Solicitar la ficha de inscripción a tu docente de Ciencias Naturales, deberás completarla con tus datos personales, procedimiento y explicación científica de tu proyecto.',
-    icon: IconFileText,
-  },
+  
   {
     title: 'Aporte Económico',
     description: 'Entregar Q30.00 (30 Quetzales) para la realización del evento. Este aporte ayuda a cubrir los costos de logística y materiales de la feria.',
@@ -126,17 +120,6 @@ const onStepIntersect = (entries, index) => {
 .steps-timeline {
   position: relative;
   padding: 2rem 0;
-}
-
-.timeline-line {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 3px;
-  background: linear-gradient(180deg, var(--mint), var(--mint-dark));
-  border-radius: 3px;
-  transform: translateX(-50%);
 }
 
 .step-item {
@@ -235,10 +218,6 @@ const onStepIntersect = (entries, index) => {
 @media (max-width: 768px) {
   .participar-section {
     padding: 4rem 1.25rem;
-  }
-
-  .timeline-line {
-    left: 28px;
   }
 
   .step-item.left,

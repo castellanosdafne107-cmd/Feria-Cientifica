@@ -32,7 +32,8 @@
       <div class="final-cta" v-intersect="{ handler: onCtaIntersect, options: { threshold: 0.3 } }">
         <div class="cta-card" :class="{ 'animate-in': ctaVisible }">
           <IconStar class="cta-star" />
-          <h3>¡Tu Proyecto Puede Cambiar el Mundo!</h3>
+          <h3>¡Día de la Feria Científica!</h3>
+          <h3>07 de Agosto</h3>
           <p>No esperes más. Reúne tu equipo, elige tu tema y comienza a construir tu proyecto científico. La ciencia necesita jóvenes como tú.</p>
           <a href="#participar" class="final-cta-button" @click.prevent="scrollTo('#participar')">
             <span>Comenzar Ahora</span>
@@ -65,19 +66,19 @@ const reminders = [
   },
   {
     title: 'Mantel de Exposición',
-    text: 'Deberás llevar un mantel para cubrir tu área de exposición el día de la feria científica.',
+    text: 'Deberás llevar un mantel Blanco para cubrir tu área de exposición el día de la feria científica.',
     icon: IconTable,
     type: 'warning',
   },
   {
     title: 'Investigación Impresa',
-    text: 'Deberán entregar una investigación sobre su proyecto de ciencias, impresa y bien presentada.',
+    text: 'Deberán entregar una investigación sobre su proyecto de ciencias, impresa y bien presentada. (Solo de 4to Primaria a 3ro básico, Primaria Baja acudir a su maestro guia)',
     icon: IconFileSearch,
     type: 'info',
   },
   {
     title: 'Semana de Pruebas',
-    text: 'Durante la semana del 15 al 19 de julio estaremos haciendo diferentes pruebas de los proyectos. Es importante que presentes los materiales en los días solicitados.',
+    text: 'Durante los dias del 20 de Julio al 31 de Julio estaremos haciendo diferentes pruebas de los proyectos. Es importante que presentes los materiales en los días solicitados.',
     icon: IconTestTube,
     type: 'urgent',
   },

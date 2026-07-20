@@ -3,10 +3,16 @@
     <div class="lapbook-container">
       <div class="section-header">
         <span class="section-tag">Sección 3</span>
-        <h2 class="section-title">El <span class="text-gradient">Lapbook</span></h2>
+        <h2 class="section-title">El <span class="text-gradient">Lapbook Giratorio</span></h2>
         <p class="section-desc">
           Tu proyecto en formato tríptico. Aprende las medidas y contenido necesario.
         </p>
+        <div class="tutorial-btn-wrapper">
+          <a href="https://www.youtube.com/watch?v=DAa6rmAOwU8" target="_blank" rel="noopener noreferrer" class="tutorial-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="tutorial-icon"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Ver Tutorial
+          </a>
+        </div>
       </div>
 
       <div class="lapbook-content">
@@ -15,13 +21,10 @@
             <img src="/images/seccion-lapbook.png" alt="Diagrama del Lapbook - Estructura tríptico" class="lapbook-diagram" />
             <div class="diagram-overlay">
               <div class="dimension-badge top">
-                <span>Alto: 80 cm</span>
+                <span>Alto: 50 cm</span>
               </div>
               <div class="dimension-badge bottom">
-                <span>Ancho: 190 cm</span>
-              </div>
-              <div class="dimension-badge side">
-                <span>Lados: 50 cm</span>
+                <span>Ancho: 150 cm</span>
               </div>
             </div>
           </div>
@@ -53,19 +56,11 @@
             <div class="dimensions-grid">
               <div class="dimension-item">
                 <span class="dim-label">Alto</span>
-                <span class="dim-value">80 cm</span>
+                <span class="dim-value">50 cm</span>
               </div>
               <div class="dimension-item">
                 <span class="dim-label">Ancho Total</span>
-                <span class="dim-value">190 cm</span>
-              </div>
-              <div class="dimension-item">
-                <span class="dim-label">Panel Central</span>
-                <span class="dim-value">90 cm</span>
-              </div>
-              <div class="dimension-item">
-                <span class="dim-label">Cada Lado</span>
-                <span class="dim-value">50 cm</span>
+                <span class="dim-value">150 cm</span>
               </div>
             </div>
           </div>
@@ -370,6 +365,66 @@ const onDetailsIntersect = (entries) => {
   font-weight: 700;
   font-size: 1.25rem;
   color: var(--mint);
+}
+
+.tutorial-btn-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.tutorial-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, var(--mint), var(--mint-dark));
+  color: var(--white);
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 100px;
+  box-shadow: 0 10px 25px rgba(0, 212, 170, 0.4);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.tutorial-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: all 0.6s ease;
+  z-index: -1;
+}
+
+.tutorial-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 212, 170, 0.6);
+  color: var(--white);
+}
+
+.tutorial-btn:hover::before {
+  left: 100%;
+}
+
+.tutorial-icon {
+  width: 24px;
+  height: 24px;
+  animation: pulse-icon 2s infinite;
+}
+
+@keyframes pulse-icon {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.25); }
+  100% { transform: scale(1); }
 }
 
 @media (max-width: 1024px) {
