@@ -24,7 +24,7 @@
                 <span>Alto: 50 cm</span>
               </div>
               <div class="dimension-badge bottom">
-                <span>Ancho: 150 cm</span>
+                <span>Ancho: 50 cm</span>
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@
               </div>
               <div class="dimension-item">
                 <span class="dim-label">Ancho Total</span>
-                <span class="dim-value">150 cm</span>
+                <span class="dim-value">50 cm</span>
               </div>
             </div>
           </div>

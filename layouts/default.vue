@@ -2,7 +2,7 @@
   <div class="app-wrapper">
     <!-- Fondo dinámico de partículas -->
     <div class="particles-bg" aria-hidden="true">
-      <div v-for="n in 30" :key="n" class="particle" :style="getParticleStyle(n)"></div>
+      <div v-for="n in 80" :key="n" class="particle" :style="getParticleStyle(n)"></div>
     </div>
 
     <!-- Canvas de fondo biológico -->
@@ -58,7 +58,7 @@ onMounted(() => {
 
   // Células flotantes
   const cells = []
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 25; i++) {
     cells.push({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
@@ -130,7 +130,7 @@ onMounted(() => {
     }
 
     // Dibujar moléculas flotantes pequeñas
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 15; i++) {
       const mx = (Math.sin(time * 0.5 + i * 1.5) * 0.5 + 0.5) * canvas.width
       const my = (Math.cos(time * 0.3 + i * 2) * 0.5 + 0.5) * canvas.height
 
