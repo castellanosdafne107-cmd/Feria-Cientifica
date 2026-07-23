@@ -28,7 +28,7 @@
 
       <h1 class="hero-title" ref="heroTitle">
         <span class="title-line">CIENCIA</span>
-        <span class="title-line accent">SIN LÍMITES</span>
+        <span class="title-line accent">FEST</span>
       </h1>
 
       <p class="hero-subtitle">
